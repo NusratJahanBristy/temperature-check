@@ -9,8 +9,11 @@ const loadTemperture=city=>{
 const displayTemperature=data=>{
     setInnerTextById('temperature',data.main.temp)
     setInnerTextById('condition',data.weather[0].main)
+    setInnerTextById('humidity',data.main.humidity)
+    setInnerTextById('wind',data.wind.deg)
+    console.log(data)
     // const tempurature=document.getElementById('tempurature')
-    console.log(data.weather[0].main)
+    // console.log(data.weather[0].main)
     // tempurature.innerText=data.main.temp;
 }
 const setInnerTextById=(id,text)=>{
